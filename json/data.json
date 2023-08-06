@@ -1,0 +1,40 @@
+[
+    {
+      "lat": 70.0822421523964,
+      "lng":  27.998317425987015,
+      "name": "Sami dress",
+      "group":"cloth",
+      "source": "tiktok",
+      "url":"7085349390084263173",
+      "marker":{"type":"circle", "color":"red"}
+    },
+    {
+      "lat": 38.72347880076907,
+      "lng":  -9.137733461083162,
+      "name": "Lisbon dance",
+      "group":"dance",
+      "source": "youtube",
+      "url":"m4kkeY0AYbo",
+      "marker":{"type":"circle", "color":"red"}
+    },
+    {
+      "lat": 47.66468386452148, 
+      "lng": -2.7596419895476214,
+      "name": "breton multi costume defile",
+      "group":"cloth",
+      "source": "tiktok",
+      "url":"7222947395477261574",
+      "marker":{"type":"circle", "color":"red"}
+    },
+    {
+      "lat": 44.98461165025315, 
+      "lng": 6.610502222071203,
+      "name": "Provencal",
+      "group":"dialect",
+      "source": "tiktok",
+      "url":"7263907812592340257",
+      "marker":{"type":"circle", "color":"red"}
+    }
+  ]
+
+  
