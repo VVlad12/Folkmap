@@ -1,7 +1,11 @@
-#map{ /* la carte DOIT avoir une hauteur sinon elle n'apparaît pas */
-    height:900px;
+body {
+  padding: 0;
+  margin: 0;
 }
-
+html, body, #map {
+  height: 100%;
+  width: 100vw;
+}
 .floating-text-box {
         position: absolute;
         top: 20px;
