@@ -23,3 +23,43 @@ select {
     width: 100%; /* Set the desired width for the iframe */
     /* Add any other styles you want for the container */
   }
+
+
+@media only screen and (max-width: 768px) {
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+}
+
+
+.leaflet-popup-content-wrapper{
+    width : 300px
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 2px 2px;
+    margin: 1px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    /* box-sizing: border-box; */
+  }
+ 
+
+  input[type=submit] {
+    width: 100%;
+    background-color: #000000 !important; 
+    color: rgb(253, 16, 16) !important; 
+    padding: 14px 130px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+

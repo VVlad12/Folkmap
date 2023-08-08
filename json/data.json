@@ -34,7 +34,54 @@
       "source": "tiktok",
       "url":"7263907812592340257",
       "marker":{"type":"circle", "color":"red"}
+    },
+    {
+      "lat": 47.24993974918581, 
+      "lng": -122.1116573511622 ,
+      "name": "jiggle dance native american",
+      "group":"dance",
+      "source": "youtube",
+      "url":"fCSMPZvTxEs",
+      "marker":{"type":"circle", "color":"red"}
+    },
+    {
+      "lat": 43.36676942705289, 
+      "lng": 5.479356805660018 ,
+      "name": "danse provencales",
+      "group":"dance",
+      "source": "youtube",
+      "url":"VlsWIe5-Kyk",
+      "marker":{"type":"circle", "color":"red"}
+    },
+    {
+      "lat": 52.113252, 
+      "lng": 20.824585 ,
+      "name": "polish danse folk ",
+      "group":"dance",
+      "source": "youtube",
+      "url":"oNpRmrZO-Yo",
+      "marker":{"type":"circle", "color":"red"}
+    },
+    {
+      "lat": 55.955351, 
+      "lng": -3.208008 ,
+      "name": "polish danse folk ",
+      "group":"dance",
+      "source": "youtube",
+      "url":"Be59_bdC-6w",
+      "marker":{"type":"circle", "color":"red"}
+    },
+    {
+      "lat": 42.666281, 
+      "lng": 23.291016 ,
+      "name": "bulgare danse folk ",
+      "group":"dance",
+      "source": "youtube",
+      "url":"mugAPuxucCY",
+      "marker":{"type":"circle", "color":"red"}
     }
+
+
   ]
 
   
