@@ -1,87 +1,523 @@
 [
-    {
-      "lat": 70.0822421523964,
-      "lng":  27.998317425987015,
-      "name": "Sami dress",
-      "group":"cloth",
-      "source": "tiktok",
-      "url":"7085349390084263173",
-      "marker":{"type":"circle", "color":"red"}
-    },
-    {
-      "lat": 38.72347880076907,
-      "lng":  -9.137733461083162,
-      "name": "Lisbon dance",
-      "group":"dance",
-      "source": "youtube",
-      "url":"m4kkeY0AYbo",
-      "marker":{"type":"circle", "color":"red"}
-    },
-    {
-      "lat": 47.66468386452148, 
-      "lng": -2.7596419895476214,
-      "name": "breton multi costume defile",
-      "group":"cloth",
-      "source": "tiktok",
-      "url":"7222947395477261574",
-      "marker":{"type":"circle", "color":"red"}
-    },
-    {
-      "lat": 44.98461165025315, 
-      "lng": 6.610502222071203,
-      "name": "Provencal",
-      "group":"dialect",
-      "source": "tiktok",
-      "url":"7263907812592340257",
-      "marker":{"type":"circle", "color":"red"}
-    },
-    {
-      "lat": 47.24993974918581, 
-      "lng": -122.1116573511622 ,
-      "name": "jiggle dance native american",
-      "group":"dance",
-      "source": "youtube",
-      "url":"fCSMPZvTxEs",
-      "marker":{"type":"circle", "color":"red"}
-    },
-    {
-      "lat": 43.36676942705289, 
-      "lng": 5.479356805660018 ,
-      "name": "danse provencales",
-      "group":"dance",
-      "source": "youtube",
-      "url":"VlsWIe5-Kyk",
-      "marker":{"type":"circle", "color":"red"}
-    },
-    {
-      "lat": 52.113252, 
-      "lng": 20.824585 ,
-      "name": "polish danse folk ",
-      "group":"dance",
-      "source": "youtube",
-      "url":"oNpRmrZO-Yo",
-      "marker":{"type":"circle", "color":"red"}
-    },
-    {
-      "lat": 55.955351, 
-      "lng": -3.208008 ,
-      "name": "polish danse folk ",
-      "group":"dance",
-      "source": "youtube",
-      "url":"Be59_bdC-6w",
-      "marker":{"type":"circle", "color":"red"}
-    },
-    {
-      "lat": 42.666281, 
-      "lng": 23.291016 ,
-      "name": "bulgare danse folk ",
-      "group":"dance",
-      "source": "youtube",
-      "url":"mugAPuxucCY",
-      "marker":{"type":"circle", "color":"red"}
-    }
+{
+"lat": 70.0822421523964,
+"lng":  27.998317425987015,
+"name": "Sami dress",
+"group":"cloth",
+"source": "tiktok",
+"url":"7085349390084263173",
+"marker":{"type":"circle", "color":"red"}
+},
+{
+"lat": 38.72347880076907,
+"lng":  -9.137733461083162,
+"name": "Lisbon dance",
+"group":"dance",
+"source": "youtube",
+"url":"m4kkeY0AYbo",
+"marker":{"type":"circle", "color":"red"}
+},
+{
+"lat": 47.66468386452148, 
+"lng": -2.7596419895476214,
+"name": "breton multi costume defile",
+"group":"cloth",
+"source": "tiktok",
+"url":"7222947395477261574",
+"marker":{"type":"circle", "color":"red"}
+},
+{
+"lat": 44.98461165025315, 
+"lng": 6.610502222071203,
+"name": "Provencal",
+"group":"dialect",
+"source": "tiktok",
+"url":"7263907812592340257",
+"marker":{"type":"circle", "color":"red"}
+},
+{
+"lat": 47.24993974918581, 
+"lng": -122.1116573511622 ,
+"name": "jiggle dance native american",
+"group":"dance",
+"source": "youtube",
+"url":"fCSMPZvTxEs",
+"sz":"v",
+"marker":{"type":"circle", "color":"red"}
+},
+{
+"lat": 43.36676942705289, 
+"lng": 5.479356805660018 ,
+"name": "danse provencales",
+"group":"dance",
+"source": "youtube",
+"url":"VlsWIe5-Kyk",
+"marker":{"type":"circle", "color":"red"}
+},
+{
+"lat": 52.113252, 
+"lng": 20.824585 ,
+"name": "polish danse folk ",
+"group":"dance",
+"source": "youtube",
+"url":"oNpRmrZO-Yo",
+"sz" : "v",
+"marker":{"type":"circle", "color":"red"}
+},
+{
+"lat": 55.955351, 
+"lng": -3.208008 ,
+"name": "scotish danse folk ",
+"group":"dance",
+"source": "youtube",
+"url":"Be59_bdC-6w",
+"marker":{"type":"circle", "color":"red"}
+},
+{
+"lat": 42.666281, 
+"lng": 23.291016 ,
+"name": "bulgare danse folk ",
+"group":"dance",
+"source": "youtube",
+"url":"mugAPuxucCY",
+"marker":{"type":"circle", "color":"red"}
+},
+{
+"lat":42.97250158602597,
+"lng":44.67041015625,
+"name":"Ossetia dance",
+"group":"dance",
+"source":"youtube",
+"url":"9DQF6liTgiU",
+"marker":{"type":"circle", "color":"red"}
+},
+{
+"lat":48.71057909211922,
+"lng":21.236572265625004,
+"name":"slovak dance",
+"group":"dance",
+"source":"youtube",
+"url":"BvN3iptR9xY",
+"marker":{"type":"circle", "color":"red"}
+},
+{
+"lat":33.87041555094183,
+"lng":134.41772460937503,
+"name":"japan street dance",
+"group":"dance",
+"source":"youtube",
+"url":"6VHSmVquHv4",
+"sz" : "v",
+"marker":{"type":"circle", "color":"red"}
+},
+{
+"lat":47.754097979680026,
+"lng":106.72119140625001,
+"name":"Mongol costume festival",
+"group":"cloth",
+"source":"youtube",
+"url":"YVwiMxYmMXQ",
+"sz" : "v",
+"marker":{"type":"circle", "color":"red"}
+},
+{
+"lat":27.522886832325796,
+"lng":90.18676757812501,
+"name":"Bhutan dance",
+"group":"dance",
+"source":"tiktok",
+"url":"7140565826087783682",
+"marker":{"type":"circle", "color":"red"}
+},
+{
+"lat":47.89424772020999,
+"lng":9.540252685546875,
+"name":"Upper Swabian folk dance",
+"group":"dance",
+"source":"youtube",
+"url":"461JbJAiFUY",
+"marker":{"type":"circle", "color":"red"}
+},
+{
+"lat":-29.888280933159276,
+"lng":-51.53686523437501,
+"name":"Danca Gaucho Brazil",
+"group":"dance",
+"source":"youtube",
+"url":"bzbKdeHq7Co",
+"sz":"v",
+"marker":{"type":"circle", "color":"red"}
+},
+{
+"lat":62.12443624549497,
+"lng":167.16796875000003,
+"name":"Koryak dance",
+"group":"dance",
+"source":"youtube",
+"url":"eaVV99Fa_Eo",
+"marker":{"type":"circle", "color":"red"}
+},
+{
+"lat":62.08331486294795,
+"lng":130.12207031250003,
+"name":"Yakut dress",
+"group":"cloth",
+"source":"tiktok",
+"url":"7251140525766577410",
+"marker":{"type":"circle", "color":"red"}
+},
+{
+"lat":54.38695529486881,
+"lng":90.24169921875001,
+"name":"Khakassia music band",
+"group":"music",
+"source":"youtube",
+"url":"tMYPrYOJCdM",
+"marker":{"type":"circle", "color":"red"}
+},
+{
+"lat":40.04443758460859,
+"lng":66.37939453125001,
+"name":"Uzbek dance ",
+"group":"dance",
+"source":"tiktok",
+"url":"6899941039826603265",
+"marker":{"type":"circle", "color":"red"}
+},
+{
+"lat":14.636738848907621,
+"lng":46.06567382812501,
+"name":"Yemini dance",
+"group":"dance",
+"source":"tiktok",
+"url":"7161344886434696449",
+"marker":{"type":"circle", "color":"red"}
+},
+{
+"lat":27.17937059656259,
+"lng":92.19760894775392,
+"name":"achi lhamo dance",
+"group":"dance",
+"source":"youtube",
+"url":"OsisCQrBx5k",
+"marker":{"type":"circle", "color":"red"}
+},
+{
+"lat":1.228657958892398,
+"lng":11.58336639404297,
+"name":"Dance Fang",
+"group":"dance",
+"source":"youtube",
+"url":"lGSj8v41B8k",
+"marker":{"type":"circle", "color":"red"}
+},
+{
+"lat":20.94551136430584,
+"lng":105.87743719236067,
+"name":"Ca tru - vietnamess music",
+"group":"music",
+"source":"tiktok",
+"url":"7239205101825445125",
+"marker":{"type":"circle", "color":"red"}
+},
+{
+"lat":68.16894521268671,
+"lng":-51.39348218056176,
+"name":"Greenlandic western dress",
+"group":"cloth",
+"source":"tiktok",
+"url":"7118459906914520325",
+"marker":{"type":"circle", "color":"red"}
+},
+{
+"lat":54.42273911582035,
+"lng":-84.74709766673278,
+"name":"cree dance",
+"group":"dance",
+"source":"tiktok",
+"url":"7248392503714614533",
+"marker":{"type":"circle", "color":"red"}
+},
+{
+"lat":50.662719927123106,
+"lng":79.94644639081837,
+"name":"Alash music",
+"group":"music",
+"source":"tiktok",
+"url":"7234077444850978053",
+"marker":{"type":"circle", "color":"red"}
+},
+{
+"lat":41.38873183834757,
+"lng":77.8694520492081,
+"name":"Kyrgyz music",
+"group":"music",
+"source":"tiktok",
+"url":"7264983218296720658",
+"marker":{"type":"circle", "color":"red"}
+},
+{
+"lat":50.73802413306748,
+"lng":70.49861346563443,
+"name":"Khazak cloth (men)",
+"group":"cloth",
+"source":"tiktok",
+"url":"7238237710798818565",
+"marker":{"type":"circle", "color":"red"}
+},
+{
+"lat":-8.427920466276152,
+"lng":115.1194829028048,
+"name":"Bali dance Calon Arang",
+"group":"dance",
+"source":"tiktok",
+"url":"7248161956253814021",
+"marker":{"type":"circle", "color":"red"}
+},
+{
+"lat":43.2917805287996,
+"lng":-103.30191240386817,
+"name":"Oglala dance - dress",
+"group":"dance",
+"source":"tiktok",
+"url":"7264367936314313989",
+"marker":{"type":"circle", "color":"red"}
+},
+{
+"lat":-18.589166444770548,
+"lng":31.671636166133666,
+"name":"Shona dance",
+"group":"dance",
+"source":"youtube",
+"url":"bYddfIvs-UI",
+"marker":{"type":"circle", "color":"red"}
+},
+{
+"lat":7.214764152440021,
+"lng":-5.9641826868672565,
+"name":"Zaouli dance ",
+"group":"dance",
+"source":"tiktok",
+"url":"7196344223803854126",
+"marker":{"type":"circle", "color":"red"}
+},
+{
+"lat":12.258232115375316,
+"lng":-11.202918754298308,
+"name":"Kora west african instrument",
+"group":"music",
+"source":"youtube",
+"url":"KS706q5lVc4",
+"sz":"v",
+"marker":{"type":"circle", "color":"red"}
+},
+{
+"lat":6.911143590147258,
+"lng":39.29226307552646,
+"name":"Ethiopian dress",
+"group":"cloth",
+"source":"youtube",
+"url":"28EK_I-kZoU",
+"sz":"v",
+"marker":{"type":"circle", "color":"red"}
+},
+{
+"lat":12.603515651065877,
+"lng":37.40918200374323,
+"name":"Ethiopian Gondar dance",
+"group":"dance",
+"source":"youtube",
+"url":"NsHizczLFxM",
+"marker":{"type":"circle", "color":"red"}
+},
+{
+"lat":16.138574771841984,
+"lng":23.083995032386994,
+"name":"Zhagawa",
+"group":"dance",
+"source":"youtube",
+"url":"ST-QYT01Ip8",
+"marker":{"type":"circle", "color":"red"}
+},
+{
+"lat":47.359091487008946,
+"lng":4.949340820312501,
+"name":"dance bourgogne XVeme",
+"group":"dance",
+"source":"youtube",
+"url":"gnqhyGIuHgk",
+"marker":{"type":"circle", "color":"red"}
+},
+{
+"lat":26.128107116931464,
+"lng":94.85458374023439,
+"name":"namipur dance ",
+"group":"dance",
+"source":"youtube",
+"url":"WHwghVIPSDY",
+"sz":"h",
+"marker":{"type":"circle", "color":"red"}
+},
+{
+ "lat":64.1338521199332,
+ "lng":102.29370117187501,
+ "name":"эвенкийску dance",
+ "group":"dance",
+ "source":"youtube",
+ "url":"1U99AREPfeE",
+ "sz":"h",
+ "marker":{"type":"circle", "color":"red"}
+},
+{
+ "lat":18.52578236561866,
+ "lng":-96.76208529621364,
+ "name":"Sound of Teponaztli Drum",
+ "group":"music",
+ "source":"youtube",
+ "url":"I7yahW58tQc",
+ "sz":"h",
+ "marker":{"type":"circle", "color":"red"}
+},
+{
+ "lat":35.06956937307973,
+ "lng":-108.82884979248048,
+ "name":"Zuni Olla Maidens",
+ "group":"dance",
+ "source":"youtube",
+ "url":"3wjTlhub8sk",
+ "sz":"h",
+ "marker":{"type":"circle", "color":"red"}
+},
+{
+ "lat":-14.734349329149035,
+ "lng":134.6965026855469,
+ "name":"ngukur dance",
+ "group":"dance",
+ "source":"tiktok",
+ "url":"6914495955345673473",
+ "sz":"v",
+ "marker":{"type":"circle", "color":"red"}
+},
+{
+ "lat":-19.142253744623034,
+ "lng":146.85333257541063,
+ "name":"aboriganal dance",
+ "group":"dance",
+ "source":"tiktok",
+ "url":"6860291564967660806",
+ "sz":"v",
+ "marker":{"type":"circle", "color":"red"}
+},
+{
+ "lat":-32.85034558314619,
+ "lng":148.33007991313937,
+ "name":"aboriganal music",
+ "group":"music",
+ "source":"tiktok",
+ "url":"7242626838030208258",
+ "sz":"v",
+ "marker":{"type":"circle", "color":"red"}
+},
+{
+ "lat":59.99465814455069,
+ "lng":10.670471191406252,
+ "name":"norwegian dance",
+ "group":"dance",
+ "source":"youtube",
+ "url":"0kvykIQrgOE",
+ "sz":"h",
+ "marker":{"type":"circle", "color":"red"}
+},
+{
+ "lat":30.646529515987993,
+ "lng":74.71252307295799,
+ "name":"punjab song",
+ "group":"music",
+ "source":"youtube",
+ "url":"NGS7JGdwdG4",
+ "sz":"h",
+ "marker":{"type":"circle", "color":"red"}
+},
+{
+ "lat":31.702543962521737,
+ "lng":75.76538063585758,
+ "name":"punjab dance",
+ "group":"dance",
+ "source":"tiktok",
+ "url":"7246794012659633435",
+ "sz":"v",
+ "marker":{"type":"circle", "color":"red"}
+},
+{
+ "lat":12.353842144944183,
+ "lng":75.8990478515625,
+ "name":"karnataka dance",
+ "group":"dance",
+ "source":"tiktok",
+ "url":"7265990310260428050",
+ "sz":"v",
+ "marker":{"type":"circle", "color":"red"}
+},
+{
+ "lat":-13.356726717467135,
+ "lng":-72.00073264539243,
+ "name":"andean dance",
+ "group":"dance",
+ "source":"youtube",
+ "url":"Ofb3cNzdKdc",
+ "sz":"h",
+ "marker":{"type":"circle", "color":"red"}
+},
+{
+ "lat":34.10922603880005,
+ "lng":-96.17614751681688,
+ "name":"Choctaw dance",
+ "group":"dance",
+ "source":"youtube",
+ "url":"2U91I87Ctn0",
+ "sz":"h",
+ "marker":{"type":"circle", "color":"red"}
+},
+{
+ "lat":-12.602192038708072,
+ "lng":-72.31384232640268,
+ "name":"andean music",
+ "group":"music",
+ "source":"youtube",
+ "url":"_JDI2Kc6mqc",
+ "sz":"h",
+ "marker":{"type":"circle", "color":"red"}
+},
+{
+ "lat":34.26626578886529,
+ "lng":-94.64873541869943,
+ "name":"Choctaw weeding trad cloth",
+ "group":"cloth",
+ "source":"tiktok",
+ "url":"6938192262010604805",
+ "sz":"v",
+ "marker":{"type":"circle", "color":"red"}
+},
+{
+ "lat":21.417091666804158,
+ "lng":-157.89001464843753,
+ "name":"ipu eke hawaian instrument",
+ "group":"music",
+ "source":"tiktok",
+ "url":"7223213094519033130",
+ "sz":"v",
+ "marker":{"type":"circle", "color":"red"}
+},
+{
+ "lat":31.27527163093698,
+ "lng":120.58914190158251,
+ "name":"pingtan suzhou music",
+ "group":"music",
+ "source":"tiktok",
+ "url":"7257406030273989895",
+ "sz":"v",
+ "marker":{"type":"circle", "color":"red"}
+}
 
+]
 
-  ]
-
-  

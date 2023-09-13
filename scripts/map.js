@@ -16,6 +16,8 @@ var themeIcon = L.Icon.extend({
 var danceicon = new themeIcon({iconUrl: './img/icondance.png'}),
 	clothicon = new themeIcon({iconUrl: './img/iconcloth.png'}),
 	dialecticon = new themeIcon({iconUrl: './img/icondialect.png'});
+	musicicon = new themeIcon({iconUrl: './img/iconmusic.png'});
+	foodicon = new themeIcon({iconUrl: './img/iconfood.png'});
 
 function addnewitem(){
 	let fr = document.forms["additem"];
@@ -27,8 +29,9 @@ function addnewitem(){
 					'",\n "group":"' + fr["addThemeSelect"].value +
 					'",\n "source":"' + fr["sourceSelect"].value +
 					'",\n "url":"' + fr["url"].value +
+					'",\n "sz":"' + fr["addSize"].value +
 					'",\n "marker":{"type":"circle", "color":"red"}'+
-				'\n }'
+				'\n}'
 
 	console.log(txt)
 
@@ -37,10 +40,32 @@ function addnewitem(){
 document.getElementById("btnsub").addEventListener('click',addnewitem);
 
 
+// function switchdefaultsize(){
+
+// }
+document.getElementById("sourceSelect").addEventListener("change", (e) => {
+	let newsz = document.getElementById("addSize")
+	switch(e.target.value){
+		case "tiktok":
+			newsz.value = "v"
+		case "youtube":
+			newsz.value = "h"
+	}
+
+	if (e.target.value=="tiktok"){
+		newsz.value = "v"
+	} else {
+		newsz.value = "h"
+	}
+	
+
+  });
+
 const map = L.map('map').setView([45.179,  10.701], 3.4);
 var layerGroup = L.layerGroup().addTo(map);
+// credit 	attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ, TomTom, Intermap, iPC, USGS, FAO, NPS, NRCAN, GeoBase, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), and the GIS User Community'
 
-	const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+	const tiles = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}', {
 		maxZoom: 19,
 		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 	}).addTo(map);
@@ -56,76 +81,20 @@ var layerGroup = L.layerGroup().addTo(map);
 
 	
 	function addMenu(pos){
-		Addmenu = `
+		Addmenu = `<div id="divadditemsock">
 					<div id="additemsock">
 					
-				</div>
-
-
+					</div>
+					</div>
 				`
-
-				// <form id="additem" >
-				// 	<label for="lat">Lat</label>
-				// 			<input type="text" name="lat" id="lat" value="${pos["lat"]}"/>
-				// 			<label for="lon">Lon</label>
-				// 			<input type="text"  name="lon" id="lon" value="${pos["lng"]}" />
-				// 			<label for="name">Name</label>
-				// 			<input type="text" name="name" id="name" />
-				// 			<label for="url">Url</label>
-				// 			<input type="text" name="url" id="url" />
-
-							
-				// 			<select id="sourceSelect">
-				// 				<option value="youtube">youtube</option>
-				// 				<option value="tiktok">tiktok</option>
-				// 			</select>
-
-							
-				// 			<select id="addThemeSelect" name="addThemeSelect">
-				// 				<option value="cloth">cloth</option>
-				// 				<option value="dance">dance</option>
-				// 				<option value="dialect">dialect</option>
-				// 			</select>
-					
-				// 	<input type="button" id="btnsub" value="Submit">
-				// 	</form>
-
-				//<form id="additem" >
-				// <label for="lat">Lat</label>
-				// 		<input type="text" name="lat" id="lat" value="${pos["lat"]}"/>
-				// 		<label for="lon">Lon</label>
-				// 		<input type="text"  name="lon" id="lon" value="${pos["lng"]}" />
-				// 		<label for="name">Name</label>
-				// 		<input type="text" name="name" id="name" />
-				// 		<label for="url">Url</label>
-				// 		<input type="text" name="url" id="url" />
-
-						
-				// 		<select id="sourceSelect">
-				// 			<option value="youtube">youtube</option>
-				// 			<option value="tiktok">tiktok</option>
-				// 		</select>
-
-						
-				// 		<select id="addThemeSelect" name="addThemeSelect">
-				// 			<option value="cloth">cloth</option>
-				// 			<option value="dance">dance</option>
-				// 			<option value="dialect">dialect</option>
-				// 		</select>
-				// <form action="/action_page.php">
-				// <p><label for="w3review">Review of W3Schools:</label></p>
-				// <textarea id="w3review" name="w3review" rows="4" cols="50">At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.</textarea>
-				// <br>
-				// <input type="submit" value="Submit">
-				// </form>
 				
 		return Addmenu
 	}
 
 	function onMapClick(e) {
-		if(True){
-			return null
-		}
+		// if(False){
+		// 	return null
+		// }
 		popup
 			.setLatLng(e.latlng)
 			//.setContent(`You clicked the map at ${e.latlng.toString()}`)
@@ -134,6 +103,7 @@ var layerGroup = L.layerGroup().addTo(map);
 		var pos = e.latlng
 		
 		document.getElementById("additemsock").append(sock)
+		// document.getElementById("leaflet-popup-content").style.width = "280px";
 		document.getElementById("lat").value = pos["lat"]
 		document.getElementById("lon").value = pos["lng"]
 	}
@@ -144,19 +114,44 @@ var layerGroup = L.layerGroup().addTo(map);
 
 	
 	function styleMarker(marker) {
-		const { lat, lng, name , group, source,url} = marker;
-		
+		const { lat, lng, name , group, source,url,sz} = marker;
+		var mWidth = 580
+		var szHeight = 315
+		var szWidth = 560
 		//var iframeHTML3 = `<iframe height="600" src="${url}" frameborder="0" ></iframe>`; 
+		switch(sz){
+			case "v":
+				var mWidth = 365
+				var szHeight = 600
+				var szWidth = 360
+			case "h":
+				break;
+			default: // IF sz is missing (old entry)
+				switch(source){
+					case "tiktok":
+						mWidth = 300
+						szHeight = 580
+						szWidth = 300
+						break;
+					case "youtube":
+						mWidth = 580
+						szHeight = 315
+						szWidth = 560
+						break;
+				}
+				break;
+		}
+		
 		switch(source){
 			case "tiktok":
 				var urltt = "https://www.tiktok.com/embed/v2/"+url
-				var iframeHTML3 = `<iframe height="600" src="${urltt}" frameborder="0" ></iframe>`;
-				var mWidth = 200; 
+				var iframeHTML3 = `<iframe width="${szWidth}" height="${szHeight}" src="${urltt}" frameborder="0" ></iframe>`;
+				// var mWidth = 200; 
 				break;
 			case "youtube":
 				var urlyt = "https://www.youtube.com/embed/"+url
-				iframeHTML3 = `<iframe width="560" height="315" src="${urlyt}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>`;
-				mWidth = 580;
+				iframeHTML3 = `<iframe width="${szWidth}" height="${szHeight}" src="${urlyt}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>`;
+				// mWidth = 580;
 				break;
 			default:
 				console.log("Type not recognised")
