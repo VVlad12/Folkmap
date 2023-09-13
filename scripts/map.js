@@ -91,22 +91,7 @@ var layerGroup = L.layerGroup().addTo(map);
 		return Addmenu
 	}
 
-	function onMapClick(e) {
-		// if(False){
-		// 	return null
-		// }
-		popup
-			.setLatLng(e.latlng)
-			//.setContent(`You clicked the map at ${e.latlng.toString()}`)
-			.setContent(addMenu(e.latlng))
-			.openOn(map);
-		var pos = e.latlng
-		
-		document.getElementById("additemsock").append(sock)
-		// document.getElementById("leaflet-popup-content").style.width = "280px";
-		document.getElementById("lat").value = pos["lat"]
-		document.getElementById("lon").value = pos["lng"]
-	}
+
 
 	
 
