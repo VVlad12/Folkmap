@@ -207,7 +207,7 @@ var layerGroup = L.layerGroup().addTo(map);
   
 	
 
-	map.on('click', onMapClick);
+	// map.on('click', onMapClick);
 
 
 	
